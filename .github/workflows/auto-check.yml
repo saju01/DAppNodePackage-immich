@@ -6,7 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "master"
+      - "main"
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
